@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name": "Dev Ankit",
+    "email": "dev_ankit@yahoo.com",
+    "password": "devankit"
+}
+
+###
+
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "dev_ankit@yahoo.com",
+    "password": "devankit"
+}
+
+###
+GET http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: auth-token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmNjN2Y2NmQ2Yjc4ZTZlY2M1YTU0MzgiLCJpYXQiOjE2MDcyNDQ1Mzd9.a3Xhe99tWcwv1RRLo67xI3HBIgRbzY5PEBlnw4HgTWs
